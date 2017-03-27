@@ -12,6 +12,6 @@ gulp
 ## Technologies used
 - Pug
 - Sass
-- Gulp
-- Browsers Sync
-- Surge
+- Gulp - Assets building
+- Browser Sync - Auto-reload
+- Surge - Deployment
