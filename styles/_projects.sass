@@ -1,0 +1,44 @@
+%clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.index-projects
+  @extend %clearfix
+  text-align: center
+
+  p
+    padding-left: 9%
+    padding-right: 9%
+
+.project-list
+  position: relative
+  margin-top: 40px
+  width: 100vw
+  overflow: hidden
+  height: 200px
+  padding: 0
+  list-style: none
+
+.project-controls
+  margin-top: 10px
+
+.project-item
+  position: relative
+  display: inline-block
+  margin: 0 10px
+  opacity: .3
+
+  &:hover
+    transition: opacity .5s linear
+    opacity: 1
+
+.project-item.active
+  opacity: 1
+
+.project-desc-item
+  display: none
+
+  h2
+    text-transform: uppercase

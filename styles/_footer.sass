@@ -1,0 +1,31 @@
+footer
+  font-size: 12px
+  text-transform: uppercase
+  color: #a5a5a5
+
+  @media(max-width: 808px)
+    text-align: center
+
+  nav
+    display: table
+    float: right
+    @media(max-width: 808px)
+      display: block
+      float: none
+    a
+      display: table-cell
+      vertical-align: middle
+
+      @media(max-width: 808px)
+        display: inline-block
+        text-align: center
+
+    a:after
+      content: "/"
+      margin: 0 5px
+
+    a:last-child:after
+      content: ""
+      margin: 0
+
+

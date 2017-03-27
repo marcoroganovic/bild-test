@@ -1,0 +1,56 @@
+.about-image
+
+.about-paragraph
+  p:first-child
+    margin: -4px
+
+.services-tabs
+  height: 200px
+  background: #efefef
+  @media(max-width: 808px)
+    height: auto
+
+  .col-3
+    height: 200px
+    text-align: center
+
+    @media(max-width: 808px)
+      height: 50px
+
+    &:hover
+      background: #dadada
+      cursor: pointer
+
+    & > i
+      display: inline-block
+      margin-top: 60px
+      @media(max-width: 808px)
+        position: relative
+        margin-top: 0
+        left: 35%
+        float: left
+        line-height: 50px
+      @media(max-width: 650px)
+        left: 20%
+  h3
+    text-transform: uppercase
+    margin-bottom: 30px
+    @media(max-width: 808px)
+      display: inline-block
+      margin-bottom: 0
+
+  i
+    font-size: 35px
+    @media(max-width: 808px)
+      font-size: 25px
+.active-tab
+    background: #dadada
+
+.tabs-content-item
+    display: none
+
+.show-tab
+  display: block
+
+.hide-tab
+  display: none

@@ -1,0 +1,111 @@
+extends partials/layout.pug
+
+block title
+  title Home | Digital.com
+
+block content
+  section.hero
+    .container
+      .hero-image
+        img(src="assets/devices.png")
+
+    .hero-text.content
+      .container
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque eu eratuy lacus, vel congue mauris. Fusce veitaria justo, faucibus eu.
+        a.button.cta(href="#") Browse portfolio
+
+  section.content.about-us
+    .container
+      .row
+        .col-6
+          .about-player
+            i.fa.fa-play
+        .col-6.pull-right
+          .about-text
+            h1 Get to know us a little better!
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+              | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+              | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+              | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+              | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+              | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+              | elit congue lacinia.
+            p
+              | Nullam tellus turpis, fringilla sit amet congue ut, luctus a
+              | nulla. Donec sit amet sapie neque, id ullamcorper diam. Nulla
+              | facilisi. Pellentesque pellentesque arcu a elit congue lacinia.
+
+  section.content.index-projects
+    .container
+      h1 A couple of our Featured projects
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque
+        | eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu
+        | sagittisac, gravida quis tortor. Suspendisse non urna mi, quis
+        | tncidunt eros.
+
+    #film-roll.project-list
+      .project-item(data-id="1")
+        a(href="javascript:void(0)")
+          img(src="assets/tile.jpg")
+      .project-item(data-id="2")
+        a(href="javascript:void(0)")
+          img(src="assets/tile2.jpg")
+      .project-item(data-id="3")
+        a(href="javascript:void(0)")
+          img(src="assets/tile3.jpg")
+      .project-item(data-id="4")
+        a(href="javascript:void(0)")
+          img(src="assets/tile4.jpg")
+      .project-item(data-id="5")
+        a(href="javascript:void(0)")
+          img(src="assets/tile.jpg")
+      .project-item(data-id="6")
+        a(href="javascript:void(0)")
+          img(src="assets/tile2.jpg")
+
+    .project-controls
+      .container-no-padding
+        .row
+            .col-1-no-wrap.button-container
+              i.fa.fa-chevron-left.prev-button
+            .col-9-no-wrap
+              .project-desc-item(data-desc-id="1")
+                h2 Project One Title
+                p
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  |Pellentesque eu erat lacus, vel congue mauris. Fusce velit just,
+                  |faucibus eu sagittis.
+              .project-desc-item(data-desc-id="2")
+                h2 Project Two Title
+                p
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  |Pellentesque eu erat lacus, vel congue mauris. Fusce velit just,
+                  |faucibus eu sagittis.
+              .project-desc-item(data-desc-id="3")
+                h2 Project Three Title
+                p
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  |Pellentesque eu erat lacus, vel congue mauris. Fusce velit just,
+                  |faucibus eu sagittis.
+              .project-desc-item(data-desc-id="4")
+                h2 Project Four Title
+                p
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  |Pellentesque eu erat lacus, vel congue mauris. Fusce velit just,
+                  |faucibus eu sagittis.
+              .project-desc-item(data-desc-id="5")
+                h2 Project Five Title
+                p
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  |Pellentesque eu erat lacus, vel congue mauris. Fusce velit just,
+                  |faucibus eu sagittis.
+              .project-desc-item(data-desc-id="6")
+                h2 Project Six Title
+                p
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  |Pellentesque eu erat lacus, vel congue mauris. Fusce velit just,
+                  |faucibus eu sagittis.
+            .col-1-no-wrap.button-container
+              i.fa.fa-chevron-right.next-button

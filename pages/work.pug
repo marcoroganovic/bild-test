@@ -1,0 +1,53 @@
+extends partials/layout.pug
+
+block title
+  title Work | Digital.com
+
+block content
+  - var info_title = "Check out what I can do"
+  include partials/page-title.pug
+  .container.content
+    .filter-controls
+      .row
+        .col-11
+            nav
+              a.active-filter(href="javascript:void(0)" data-projects="all") All
+              a(href="javascript:void(0)" data-projects="print") Print
+              a(href="javascript:void(0)" data-projects="photography") Photography
+              a(href="javascript:void(0)" data-projects="web") Web
+              a(href="javascript:void(0)" data-projects="applications") Applications
+        .col-1
+          .view-controls
+            i.fa.fa-th-large.active-view(data-view="grid")
+            i.fa.fa-bars(data-view="list")
+
+  .container
+    .filter-items
+      .row
+        .col-4
+          figure(data-project-class="web")
+            img(src="assets/tile.jpg")
+        .col-4
+          figure(data-project-class="web")
+            img(src="assets/tile2.jpg")
+        .col-4
+          figure(data-project-class="photography")
+            img(src="assets/tile3.jpg")
+        .col-4
+          figure(data-project-class="applications")
+            img(src="assets/tile.jpg")
+        .col-4
+          figure(data-project-class="print")
+            img(src="assets/tile2.jpg")
+        .col-4
+          figure(data-project-class="print")
+              img(src="assets/tile3.jpg")
+        .col-4
+          figure(data-project-class="applications")
+            img(src="assets/tile3.jpg")
+        .col-4
+          figure(data-project-class="print")
+            img(src="assets/tile2.jpg")
+        .col-4
+          figure(data-project-class="web")
+            img(src="assets/tile.jpg")

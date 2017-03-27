@@ -1,0 +1,121 @@
+extends partials/layout.pug
+
+block title
+    title About | Digital.com
+
+block content
+  - var info_title = "About my bussines"
+  include partials/page-title.pug
+  .container
+    .row.content
+      .col-5.about-image
+        img(src="assets/person.png")
+      .col-7.pull-right.about-paragraph
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi.
+  .container
+    .row
+      .col-6
+        h2 Mission statement
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+      .col-6.pull-right
+        h2 Fun Facts
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+  .container.services-title
+    h2 Services
+  .services-tabs
+    .container-no-padding
+      .row
+        .col-3(class="active-tab" data-category="websites")
+          i.fa.fa-cogs
+          h3 Websites
+        .col-3(data-category="photography")
+          i.fa.fa-camera
+          h3 Photography
+        .col-3(data-category="seo")
+          i.fa.fa-search
+          h3 SEO
+        .col-3(data-category="applications")
+          i.fa.fa-tasks
+          h3 Applications
+
+  .tabs-content
+    .container
+      .tabs-content-item(class="show-tab" data-category-name="websites")
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+
+        ul
+            li Websites
+
+      .tabs-content-item(data-category-name="photography")
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+
+        ul
+          li Photography
+
+      .tabs-content-item(data-category-name="seo")
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+
+        ul
+            li SEO
+
+      .tabs-content-item(data-category-name="applications")
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicng elit.
+          | Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo,
+          | faucibus eu sagittis ac, gravida quis tortor. Suspendiesse non
+          | urna mi, quis tincidunt eros. Nullam tellus turpis, frignilla sit
+          | amet congue ut lactus a nulla. Donec sit amet sapien neque, id
+          | ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a
+          | elit congue lacinia.
+
+        ul
+          li Applications

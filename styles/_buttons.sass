@@ -1,0 +1,48 @@
+.button
+  display: inline-block
+  margin: 0 auto
+  padding: 10px 20px
+  background: #2cc26b
+  color: #fff
+  text-align: center
+  text-transform: uppercase
+  font-weight: 100
+  font-size: 0.95em
+  letter-spacing: 1px
+
+  @media(max-width: 600px)
+    padding: 8px 10px
+    font-size: .8em
+
+.more-info-button
+  margin: 0
+  float: right
+
+  @media(max-width: 808px)
+    margin: 0 auto
+    float: none
+
+.button-container
+  display: table
+  height: 170px
+
+.prev-button,
+.next-button
+  display: table-cell
+  vertical-align: middle
+  font-size: 35px
+  color: #ccc
+  @media(max-width: 360)
+    font-size: 15px
+  &:hover
+    cursor: pointer
+    color: $green
+
+.prev-button
+  text-align: right
+  @media(max-width: 360px)
+    text-align: none
+.next-button
+  text-align: left
+  @media(max-width: 360px)
+    text-align: none

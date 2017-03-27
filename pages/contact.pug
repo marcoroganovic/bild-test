@@ -1,0 +1,53 @@
+extends partials/layout.pug
+
+block title
+  title Contact | Digital.com
+
+
+block content
+  - var info_title = "Got a question or inquiry?"
+  include partials/page-title.pug
+  .contact-page-map
+    figure
+      img(src="assets/map.png")
+
+  .contact.content
+    .container
+      .row
+        .col-7.form-area
+          h2 Contact Form
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec
+            | tincidunt dolor et tristique bibendum. Aenean sollicitudin vitae
+            | dolor ut posuere.
+
+          form(action="" method="")
+            input(type="text" name="name" placeholder="Name")
+            input(type="email" name="email" placeholder="Email Address")
+            input(type="text" name="subject" placeholder="Subject")
+            textarea
+            input(type="button" name="send" value="Send Message" class="button")
+        .col-4.pull-right
+          .info
+            h2 Contact Info
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit velit justo.
+            b email:
+            a(href="mailto:info@display.com")  info@display.com
+            br
+            b phone:
+            |  1.306.222.4545
+          .info-hours
+            h2 Store Hours
+            table
+              tr
+                td Monday - Thursday
+                td 8 am - 5 pm
+              tr
+                td Friday
+                td 8 am - 6px
+              tr
+                td Saturday
+                td 9 am - 5 pm
+              tr
+                td Sunday & Holidays
+                td Closed

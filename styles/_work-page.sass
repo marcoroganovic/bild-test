@@ -1,0 +1,55 @@
+.filter-controls
+
+  nav
+    text-transform: uppercase
+    @media(max-width: 808px)
+      text-align: center
+    a
+      @media(max-width: 808px)
+        font-size: 0.7em
+      &:after
+        content: "/"
+        margin: 0 10px
+      &:last-child:after
+          content: ""
+      &:hover
+        color: $green
+
+
+.view-controls
+  text-align: right
+  @media(max-width: 808px)
+    text-align: center
+  i
+    font-size: 20px
+    margin-right: 10px
+    @media(max-width: 808px)
+      display: none
+    &:hover
+      color: $green
+      cursor: pointer
+
+.active-view
+  color: $green
+
+.filter-items
+  margin-bottom: 50px
+  .col-4
+      margin: .55% .75%
+  .col-6
+    float: none
+    display: block
+    margin: 0 auto
+  figure > img
+    opacity: .5s
+    transition: opacity .5s ease-in-out
+    &:hover
+      transition: opacity .5s linear
+      opacity: 1
+
+.active-filter
+  color: $green
+
+.inactive
+  opacity: .3
+  transition: opacity .5s ease-in-out
